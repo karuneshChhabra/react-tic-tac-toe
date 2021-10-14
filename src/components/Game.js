@@ -92,7 +92,7 @@ function Game() {
     const desc = move ? "Go to Move " + move : "Start the Game";
 
     return (
-      <li>
+      <li key='move'>
         <button onClick={() => jumpTo(move)}>{desc}</button>
       </li>
     );
